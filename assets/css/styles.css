@@ -84,6 +84,39 @@ textarea {
   margin-top: 0.8rem;
 }
 
+.button-whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  text-decoration: none !important;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  z-index: 9;
+  position: fixed;
+  outline: none;
+  bottom: 4rem;
+  right: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.whatsapp {
+  background-color: var(--color-title-in-red);
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid transparent;
+  border-left: 4px solid transparent;
+  transition: filter 0.3s;
+}
+
+.whatsapp:hover {
+  filter: brightness(0.8)
+}
+
+.none-mobile {
+  display: none;
+}
+
 @media (min-width: 1100px) {
   :root {
     font-size: 62.5%;
@@ -119,5 +152,23 @@ textarea {
   .hero-image {
     grid-area: hero;
     justify-self: end;
+  }
+
+  .button-whatsapp {
+    width: 250px;
+    height: 50px;
+    font-size: 1em;
+    color: #000;
+    font-weight: 700;
+  }
+
+  .button-whatsapp img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  .none-mobile {
+    display: flex;
   }
 }
